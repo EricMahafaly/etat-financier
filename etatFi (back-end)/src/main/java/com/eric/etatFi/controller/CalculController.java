@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(path = "calcul")
 public class CalculController {
-    private CalculService calculService;.
+    private CalculService calculService;
 
     @GetMapping(path = "marge-nette")
     public ResponseEntity<?> margeNette() {
