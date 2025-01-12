@@ -16,9 +16,9 @@ public class Bilan {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idBilan;
-    @JoinColumn(name = "id_rubrique")
+    @JoinColumn(name = "id_rubrique_bilan")
     @OneToOne
-    private Rubrique rubrique;
+    private RubriqueBilan rubrique;
     @Column(unique = true)
     private String poste;
     private double montant;

@@ -11,8 +11,8 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name = "rubrique")
-public class Rubrique {
+@Table(name = "rubrique_bilan")
+public class RubriqueBilan {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idRubrique;
