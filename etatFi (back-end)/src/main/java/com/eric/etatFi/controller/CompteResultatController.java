@@ -19,7 +19,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 public class CompteResultatController {
     private CompteResultatService compteResultatService;
 
-    @GetMapping(path = "rubrique", produces = APPLICATION_JSON_VALUE)
+    @GetMapping(path = "rubriques", produces = APPLICATION_JSON_VALUE)
     public ResponseEntity<?> prendreCompteResultatRubriques() {
         List<RubriqueCompte> rubriqueComptes = compteResultatService.prendreCompteResultatRubriques();
 

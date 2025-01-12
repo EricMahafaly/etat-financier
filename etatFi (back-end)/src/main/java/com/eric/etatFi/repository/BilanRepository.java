@@ -5,9 +5,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import java.util.List;
-
 public interface BilanRepository extends JpaRepository<Bilan, Integer> {
     @Query("SELECT SUM(montant) FROM Bilan b WHERE b.rubrique.typeRubrique = :type")
     double getSommeMontantType(@Param("type") String typeRubrique);
+
+    Bilan findByRubrique_NomRubrique(String nomRubrique);
 }
