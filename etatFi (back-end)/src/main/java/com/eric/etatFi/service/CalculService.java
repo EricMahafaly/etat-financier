@@ -16,7 +16,6 @@ public class CalculService {
         double resultatNet = compteResultatRepository.getMontantCompteResultat("Resultat net");
         double chiffreAffaire = compteResultatRepository.getMontantCompteResultat("Chiffre affaires");
         double margeNetteMontant = (resultatNet / chiffreAffaire) * 100;
-
         return new IndicateurFinanceDto("marge nette", margeNetteMontant);
     }
 
@@ -27,6 +26,4 @@ public class CalculService {
 
         return new IndicateurFinanceDto("retour actif", retourActifMontant);
     }
-
-    public
 }
